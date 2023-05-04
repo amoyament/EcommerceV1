@@ -1,2 +1,2 @@
-let firstName = "Aubrey";
+const firstName = "Aubrey";
 console.log("firstName");
