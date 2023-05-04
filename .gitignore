@@ -108,3 +108,9 @@ dist
 
 # CSS Compiler
 sass*
+
+# ignore all files
+**/*.*
+
+# except json files in test1 folder
+!test1/**/*.json
