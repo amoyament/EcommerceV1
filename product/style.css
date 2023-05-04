@@ -1,0 +1,16 @@
+.product {
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 30px; /* increased from 20px */
+  margin-left: 15px;
+  margin-right: 15px;
+  display: inline-grid;
+  grid-template-columns: 3;
+  width: 200px;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
