@@ -50,11 +50,6 @@ nav ul li a:hover {
   color: #cd4439;
 }
 
-#pocketlogo {
-  border-radius: 5px;
-  height: 2em;
-}
-
 /* --------------------------------------HERO CODE-------------------------------------------- */
 .hero {
   color: rgb(245, 222, 179);
