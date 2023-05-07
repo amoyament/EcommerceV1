@@ -1,74 +1,74 @@
 [
   {
-    "name": "Product 1",
-    "price": "0.0",
-    "description": "This is the first product.",
-    "image": "Photos/osiel.png"
+    "name": "Ali's Set",
+    "price": "$120.00",
+    "description": "Elevate your work wardrobe with Ali's Set, our black and brown plaid pant suit that combines comfort and sophistication. Made with soft, breathable fabric and functional pockets, this suit offers a tailored fit that flatters your figure and exudes confidence. Whether you're leading a meeting or running errands, Ali's Set will help you feel productive and stylish all day long.",
+    "image": "../photos/aliset.webp"
   },
   {
-    "name": "Product 2",
-    "price": "0.0",
-    "description": "This is the second product.",
-    "image": "images/product2.jpg"
+    "name": "Amanda's Set",
+    "price": "$135.00",
+    "description": "Upgrade your work wardrobe with the Amanda's Set, a sophisticated blue pant suit that combines comfort and style effortlessly. Crafted with soft, breathable fabric and featuring functional pockets, this suit offers a tailored fit that flatters your figure and exudes confidence. Whether you're leading a presentation or attending a networking event, the Amanda Set will help you feel confident and chic all day long.",
+    "image": "../photos/amandaset.webp"
   },
   {
-    "name": "Product 3",
-    "price": 0.0,
-    "description": "This is the third product.",
-    "image": "images/product3.jpg"
+    "name": "Mirabel's Jumpsuit",
+    "price": "$95.00",
+    "description": "Inspire confidence with Mirabel's Jumpsuit, a comfortable and stylish burnt orange piece that is perfect for any occasion. Made with soft, breathable fabric and functional pockets, this jumpsuit offers a relaxed fit that flatters any figure. The bold burnt orange color adds a touch of vibrancy to your look, making it a statement piece in your collection. Whether you're dressing it up or down, Mirabel's Jumpsuit will help you feel confident and fashionable all day long.",
+    "image": "../photos/mirabelset.webp"
   },
   {
-    "name": "Product 4",
-    "price": 0.0,
-    "description": "This is the fourth product.",
-    "image": "images/product4.jpg"
+    "name": "Daisy's Blazer",
+    "price": "$75.00",
+    "description": "Add a touch of sophistication  with Daisy's Blazer, a soft and simple pink piece that adds a touch of elegance to any outfit. Made with comfortable fabric and functional pockets, this blazer offers a tailored fit that flatters any figure. The delicate pink color adds a pop of color to your wardrobe, making it a versatile piece that can be dressed up or down. Whether you're heading to a meeting or out for drinks, Daisy's Blazer will help you feel confident and stylish all day long.",
+    "image": "../photos/daisyblazer.webp"
   },
   {
-    "name": "Product 5",
-    "price": 0.0,
-    "description": "This is the fifth product.",
-    "image": "images/product5.jpg"
+    "name": "Jennifer's Blazer",
+    "price": "$80.00",
+    "description": "Make a statement with Jennifer's Blazer, a timeless brown and cream herringbone piece that exudes sophistication. Crafted from high-quality fabric with functional pockets, this blazer offers a tailored fit that flatters any figure. The classic herringbone pattern adds a touch of refinement to your wardrobe. Whether you're leading a presentation or attending a networking event, Amanda's Blazer will help you feel confident and professional all day long.",
+    "image": "../photos/jenniferblazer.webp"
   },
   {
-    "name": "Product 6",
-    "price": 0.0,
-    "description": "This is the sixth product.",
-    "image": "images/product6.jpg"
+    "name": "Mirabel's Button Up",
+    "price": "$35.00",
+    "description": "Stay comfortable and stylish with Mirabel's Button Up, a short sleeve green top that's both breathable and versatile. Designed with a front breast pocket, this button-up is both functional and fashionable. Made with lightweight and breathable fabric, it's perfect for any occasion, whether you're at work or enjoying the weekend. Dress it up with slacks or dress it down with jeans, either way, Mirabel's Button Up is the perfect addition to any wardrobe.",
+    "image": "../photos/mirabelshirt.webp"
   },
   {
-    "name": "Product 7",
-    "price": 0.0,
-    "description": "This is the seventh product.",
-    "image": "images/product7.jpg"
+    "name": "Amanda's Top",
+    "price": "$40.00",
+    "description": "Transform your casual wardrobe with Amanda's Top, a fashionable and versatile shirt that combines classic stripes with a modern twist. With its deep v-neck and collar, this top is both feminine and stylish. Made with a soft and thick fabric, it's perfect for cooler weather and can be layered with your favorite jacket or cardigan. The multi-colored stripes add a touch of personality to your outfit, making it perfect for a day at the office or a night out with friends. Dress it up or down, Amanda's Top is sure to become a go-to piece in your wardrobe.",
+    "image": "../photos/amandashirt.webp"
   },
   {
-    "name": "Product 8",
-    "price": 0.0,
-    "description": "This is the eigth product.",
-    "image": "images/product8.jpg"
+    "name": "Daisy's Skirt",
+    "price": "$60.00",
+    "description": "Stay chic and comfortable with Daisy's Skirt, a versatile and functional addition to any wardrobe. Made with a thick and high-quality fabric, this cream-colored skirt is perfect for any occasion, from work to weekends. With its T-length design and convenient pockets, it's both stylish and practical. Dress it up with a blouse or dress it down with a t-shirt and sneakers, either way, Daisy's Skirt is sure to turn heads. Elevate your style and stay comfortable all day long with this must-have skirt.",
+    "image": "../photos/daisyskirt.webp"
   },
   {
-    "name": "Product 9",
-    "price": 0.0,
-    "description": "This is the ninth product.",
-    "image": "images/product9.jpg"
+    "name": "Jennifer's Skirt",
+    "price": "$75.00",
+    "description": "Add a touch of sophistication to your wardrobe with Jennifer's Skirt, a stylish and practical piece that will elevate any outfit. The dark green color is versatile and pairs well with any top, while the T-length design and gold buttons add a touch of elegance. With its convenient pockets, this skirt is both fashionable and functional, making it perfect for work or play. Made with a high-quality fabric, it's comfortable and durable, ensuring it will become a staple in your closet for years to come. Dress it up with heels or dress it down with flats, Jennifer's Skirt is a must-have for any fashion-forward woman",
+    "image": "../photos/jenniferskirt.webp"
   },
   {
-    "name": "Product 10",
-    "price": 0.0,
-    "description": "This is the tenth product.",
-    "image": "images/product10.jpg"
+    "name": "Amanda's Pant",
+    "price": "$65.00",
+    "description": "Stay comfortable and chic with Amanda's Pant, a modern take on a classic wardrobe staple. Made with a soft and breathable fabric, these slacks are perfect for long days at the office or running errands around town. The wide leg design is both stylish and functional, allowing for easy movement and comfort all day long. With convenient pockets, you can keep your essentials close at hand while maintaining a sleek and polished look. Whether you pair them with heels or flats, Amanda's Pant is sure to become a favorite in your closet. Stay on-trend and comfortable with this must-have piece.",
+    "image": "../photos/amandapant.webp"
   },
   {
-    "name": "Product 11",
-    "price": 0.0,
-    "description": "This is the eleventh product.",
-    "image": "images/product11.jpg"
+    "name": "Ali's Pant",
+    "price": "$70.00",
+    "description": "Elevate your everyday wardrobe with our loose-fitting Ali's Pant, featuring a bold black, red, and cream plaid design. Crafted with a comfortable, lightweight fabric, these pants are perfect for transitioning from the office to after-work events. The relaxed fit and trendy plaid pattern create a chic and versatile look that's perfect for any occasion. With a convenient front pocket, you can keep your essentials close at hand while looking stylish and put-together. Dress up or down with heels or sneakers, and make a statement with Ali's Pant. Shop now and add a pop of plaid to your wardrobe.",
+    "image": "../photos/alipant.webp"
   },
   {
-    "name": "Product 12",
-    "price": 0.0,
-    "description": "This is the twelth product.",
-    "image": "images/product12.jpg"
+    "name": "Daiy's Pant",
+    "price": "$60.00",
+    "description": "Add a touch of feminity to your wardrobe with the perfect blend of comfort and style. Our Daisy Pant offers effortless style with a functional twist. These dusty rose colored slacks feature a loose fit and snap close buttons, while the tie front ribbon adds a touch of femininity. Whether you're running errands or dressing up for a night out, the Daisy Pant is perfect for any occasion. Designed with the modern woman in mind, these pants offer comfort and style that you won't find anywhere else. With their chic, versatile design, the Daisy Pant is sure to become a staple in your wardrobe for years to come.",
+    "image": "../photos/daisypant.webp"
   }
 ]

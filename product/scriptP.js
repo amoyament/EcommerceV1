@@ -7,14 +7,18 @@ fetch("products.json")
       const div = document.createElement("div");
       div.classList.add("product");
 
+      const name = document.createElement("h2");
+      name.textContent = product.name;
+      div.appendChild(name);
+
       const image = document.createElement("img");
       image.src = product.image;
       image.alt = product.name;
       div.appendChild(image);
 
-      const name = document.createElement("h2");
-      name.textContent = product.name;
-      div.appendChild(name);
+      const price = document.createElement("p");
+      price.textContent = product.price;
+      div.appendChild(price);
 
       const description = document.createElement("p");
       description.textContent = product.description;
