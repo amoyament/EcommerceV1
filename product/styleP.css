@@ -82,7 +82,7 @@ footer {
 .social-icons li {
   display: inline-block;
   padding: 10px 20px;
-  margin: 0px;
+  margin: 0;
 }
 
 .social-icons ul {
@@ -101,15 +101,15 @@ footer {
   font-size: 80%;
 }
 
-.footer-section ul {
-  font-size: 60%;
-  list-style: none;
-}
-
 .footer-section a {
   text-decoration: none;
   color: rgb(243, 230, 206);
   font-size: 25%;
+}
+
+.footer-section ul {
+  font-size: 60%;
+  list-style: none;
 }
 
 #footer-s1 {
@@ -169,12 +169,12 @@ footer {
 
   .social-icons li {
     padding: 20px 70px;
-    margin: 0px;
+    margin: 0;
   }
 
   .footer-section h5 {
     font-size: 120%;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .footer-section ul {
@@ -206,12 +206,12 @@ footer {
 
   .social-icons li {
     padding: 10px 75px 50px;
-    margin: 0px;
+    margin: 0;
   }
 
   .footer-section h5 {
     font-size: 120%;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .footer-section a {

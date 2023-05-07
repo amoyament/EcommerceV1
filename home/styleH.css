@@ -88,7 +88,7 @@ nav ul li a:hover {
   padding: 5px 10px;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.808);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.808);
 }
 
 .hero-btn:hover {
@@ -96,6 +96,7 @@ nav ul li a:hover {
   color: #cd4439;
   border: 2px solid #cd4439;
 }
+
 /* --------------------------------------MAIN/SUBSECTIONS CODE-------------------------------------------- */
 
 .featured h4 {
@@ -103,11 +104,11 @@ nav ul li a:hover {
   text-align: center;
   font-size: 120%;
   font-weight: bold;
-  text-align: center;
-  margin: 8% 0% 4%;
+  margin: 8% 0 4%;
 }
 
 /* --------------------------------------CAROUSEL CODE-------------------------------------------- */
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 50%;
@@ -154,6 +155,7 @@ nav ul li a:hover {
   height: 10%;
   width: 100%;
 }
+
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
@@ -181,6 +183,7 @@ nav ul li a:hover {
   from {
     opacity: 0.4;
   }
+
   to {
     opacity: 1;
   }
@@ -222,7 +225,7 @@ nav ul li a:hover {
   padding: 5px 10px;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.808);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.808);
 }
 
 .btn:hover {
@@ -233,10 +236,10 @@ nav ul li a:hover {
 
 #section1 {
   color: rgb(243, 230, 206);
-  background-image: url(../photos/shophome.webp);
+  background-image: url("../photos/shophome.webp");
   background-size: cover;
   background-position: center;
-  padding: 20% 10% 20% 10%;
+  padding: 20% 10%;
 }
 
 .pvw-title1 span {
@@ -265,7 +268,7 @@ nav ul li a:hover {
   background-image: url("../photos/warpockets.webp");
   background-size: cover;
   background-position: center;
-  padding: 8px 0px;
+  padding: 8px 0;
 }
 
 /* ------------------------------------Footer Code----------------------------------- */
@@ -283,7 +286,7 @@ footer {
 .social-icons li {
   display: inline-block;
   padding: 10px 20px;
-  margin: 0px;
+  margin: 0;
 }
 
 .social-icons ul {
@@ -302,15 +305,15 @@ footer {
   font-size: 80%;
 }
 
-.footer-section ul {
-  font-size: 60%;
-  list-style: none;
-}
-
 .footer-section a {
   text-decoration: none;
   color: rgb(243, 230, 206);
   font-size: 25%;
+}
+
+.footer-section ul {
+  font-size: 60%;
+  list-style: none;
 }
 
 #footer-s1 {
@@ -388,7 +391,7 @@ footer {
     font-size: 180%;
     font-weight: bold;
     text-align: center;
-    margin: 1% 0% 1%;
+    margin: 1% 0;
   }
 
   /* ------------SUBSECTIONS QUERY CODE----------- */
@@ -399,7 +402,7 @@ footer {
 
   .pvw-title2:after {
     font-size: 20px;
-    padding: 0px 10px;
+    padding: 0 10px;
     content: "We believe that professional attire shouldn't have to compromise comfort, practicality, or style. That's why we design every article of clothing with pockets, to eliminate the frustration of having to carry a purse or sacrifice functionality. Our commitment to functionality and inclusivity is inspired by the ongoing war on pockets in women's clothing. We strive to make a difference in this industry by offering comfortable yet stylish clothing options that enable women to balance motherhood, education, the boardroom, and so much more without compromising on their personal style. Our goal is to take professional clothing from sexist to sexy, by promoting inclusivity and empowering women to feel confident and productive in any setting.";
   }
 
@@ -409,8 +412,8 @@ footer {
 
   .subsection p {
     font-size: 20px;
-    padding: 30px 0px 0px;
-    margin-bottom: 0px;
+    padding: 30px 0 0;
+    margin-bottom: 0;
   }
 
   .btn {
@@ -419,7 +422,7 @@ footer {
   }
 
   #section1 p {
-    padding: 5px 0px;
+    padding: 5px 0;
   }
 
   #section2 p {
@@ -443,12 +446,12 @@ footer {
 
   .social-icons li {
     padding: 20px 70px;
-    margin: 0px;
+    margin: 0;
   }
 
   .footer-section h5 {
     font-size: 120%;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .footer-section ul {
@@ -481,6 +484,7 @@ footer {
   .hero {
     height: 90vh;
   }
+
   .hero h2 {
     font-size: 350%;
     margin-top: 65px;
@@ -500,7 +504,7 @@ footer {
 
   .featured h4 {
     font-size: 200%;
-    margin: 1% 0% 1%;
+    margin: 1% 0%;
   }
 
   /* Slideshow container */
@@ -533,11 +537,11 @@ footer {
 
   /* ------------SUBSECTIONS QUERY CODE----------- */
   .subsection {
-    padding: 0px 20px;
+    padding: 0 20px;
   }
 
   .subsection a {
-    padding: 0px;
+    padding: 0;
   }
 
   .subsection h4 {
@@ -575,6 +579,7 @@ footer {
     font-size: 15px;
     margin-top: 10px;
   }
+
   #section3 p {
     font-size: 20px;
   }
@@ -585,19 +590,19 @@ footer {
 
   #section3 h4 {
     padding-top: 20px;
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   /* -------------FOOTER QUERY CODE------------ */
 
   .social-icons li {
     padding: 10px 75px 50px;
-    margin: 0px;
+    margin: 0;
   }
 
   .footer-section h5 {
     font-size: 120%;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .footer-section a {
