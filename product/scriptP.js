@@ -16,13 +16,13 @@ fetch("products.json")
       image.alt = product.name;
       div.appendChild(image);
 
-      const price = document.createElement("p");
-      price.textContent = product.price;
-      div.appendChild(price);
-
       const description = document.createElement("p");
       description.textContent = product.description;
       div.appendChild(description);
+
+      const price = document.createElement("p");
+      price.textContent = product.price;
+      div.appendChild(price);
 
       products.appendChild(div);
     });
