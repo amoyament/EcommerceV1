@@ -4,62 +4,64 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
     <link rel="stylesheet" type="text/css" href="styleH.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>HomePage</title>
   </head>
   <body>
     <header>
       <nav>
-        <h1><a>Effortless Threads</a></h1>
-        <ul>
-          <li><a href="#">OurShop</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Cart</a></li>
-        </ul>
-        <!-- <img id="pocketlogo" src="../photos/pocket.png" /> -->
+        <section class="nav-header">
+          <h1>
+            <a href="../home/indexH.html">Effortless Threads</a>  
+            <a href="javascript:void(0);" class="icon">
+              <i class="fa fa-bars"></i>
+            </a>
+          </h1>
+        </section>
+        <div id="links">
+          <ul>
+            <li><a href="../product/indexP.html">Our Shop</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="../contact/indexCo.html">Contact Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Cart</a></li>
+          </ul>
+        </div>
       </nav>
       <div class="hero">
         <h2>Welcome to Effortless Threads</h2>
         <p>Taking professional clothing from sexist to sexy since 2021.</p>
-        <a href="#" class="hero-btn">Check Out Our Shop</a>
+        <a href="../product/indexP.html" class="hero-btn">Check Out Our Shop</a>
       </div>
     </header>
     <main>
       <section class="featured">
         <h4>Browse Our Featured Threads...</h4>
-        <!-- Slideshow container -->
         <div class="slideshow-container">
-          <!-- Full-width images with number and caption text -->
-          <div class="mySlides fade">
+          <div class="slide">
             <img class="slide-photo" src="../photos/slied1.webp" alt="Ali's Set: Plaid blazer and slacks set." />
           </div>
-
-          <div class="mySlides fade">
+      
+          <div class="slide">
             <img class="slide-photo" src="../photos/slide2.webp" alt="Jennifer's Skirt: Dark green skirt with gold buttons." />
           </div>
-
-          <div class="mySlides fade">
+      
+          <div class="slide">
             <img class="slide-photo" src="../photos/slide3.webp" alt="Jennifer's Set: Mustard blazer and slacks set" />
           </div>
-
-          <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <a class="prev">&#10094;</a>
+          <a class="next">&#10095;</a>
         </div>
         <br />
-
-        <!-- The dots/circles -->
+      
         <div style="text-align: center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
         </div>
+      </section>
         <!-- end of slideshow -->
 
         <a class="page-link" href="../product/indexP.html">

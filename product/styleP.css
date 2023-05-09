@@ -30,38 +30,53 @@ nav {
   text-align: center;
 }
 
+.nav-header {
+  overflow: hidden;
+  position: relative;
+}
+
 nav h1 {
   color: wheat;
-  font-size: 250%;
+  font-size: 200%;
+  cursor: pointer;
+}
+
+nav h1 .icon {
+  color: wheat;
+  font-size: 80%;
+  padding-left: 5%;
+  padding-right: 0;
+  cursor: pointer;
 }
 
 nav h1 a {
   color: wheat;
   text-decoration: none;
   font-weight: normal;
-}
-
-nav ul li {
   display: inline;
   list-style: none;
+}
+
+#links {
+  /* display: inline;
+  list-style: none; 
+  add this ^^ to desktop query*/
+  /* Display none takes away links */
+  display: none;
   font-size: 125%;
   margin: 0, 20%;
+  border-top: solid #3f2218 2px;
+  border-bottom: solid #3f2218 2px;
 }
 
 nav ul li a {
   color: wheat;
   text-decoration: none;
-
+  transition: all 0.3s ease-in-out;
   padding: 0 5%;
 }
 
-nav h1 a:hover {
-  transition: all 0.3s ease-in-out;
-  color: #cd4439;
-}
-
 nav ul li a:hover {
-  transition: all 0.3s ease-in-out;
   color: #cd4439;
 }
 
@@ -309,6 +324,14 @@ footer {
     margin: 0, 15%;
   }
 
+  nav h1 .icon {
+    color: wheat;
+    font-size: 80%;
+    padding-left: 5%;
+    padding-right: 0;
+    cursor: pointer;
+  }
+
   /* ---------STYLE SECTION QUERY CODE---------- */
 
   h2.style-main-title {
@@ -373,6 +396,17 @@ footer {
 
   nav ul li {
     font-size: 120%;
+    display: inline;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  #links {
+    display: inline;
+    border-top: none;
+    border-bottom: none;
   }
 
   /* ---------STYLE SECTION QUERY CODE---------- */

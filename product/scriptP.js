@@ -1,12 +1,29 @@
+//Hamburger Menu JS
+const hamburger = document.getElementsByClassName("icon")[0];
+const links = document.getElementById("links");
+
+// hamburger.addEventListener("click", () => {
+//   links.style.display = "block";
+// });
+
+hamburger.addEventListener("click", () => {
+  if (links.style.display === "block") {
+    links.style.display = "none";
+  } else {
+    links.style.display = "block";
+  }
+});
+
+//Style section drop down
 const stylesSubsection = document.getElementById("styles-subsection");
 const styleTitle = document.getElementsByClassName("style-main-title")[0];
 
 styleTitle.addEventListener("click", () => {
-  stylesSubsection.style.display = "block";
-});
-
-stylesSubsection.addEventListener("click", () => {
-  stylesSubsection.style.display = "none";
+  if (stylesSubsection.style.display === "none") {
+    stylesSubsection.style.display = "block";
+  } else {
+    stylesSubsection.style.display = "none";
+  }
 });
 
 fetch("products.json")
@@ -45,7 +62,7 @@ fetch("products.json")
 
       const button = document.createElement("a");
       button.classList.add("order-button");
-      button.setAttribute("href", "https://example.com");
+      button.setAttribute("href", "../cart/indexCa.html");
       button.textContent = "Add to Order";
 
       div.appendChild(button);
@@ -68,5 +85,3 @@ fetch("products.json")
       });
     });
   });
-
-// If time allows, edit and add back for on click of styles dropdown

@@ -14,54 +14,69 @@ body {
 
 /* --------------------------------------HEADER CODE-------------------------------------------- */
 header {
-  /* Zindex for menu page so photos dont roll over */
-  z-index: 5;
-  position: sticky;
-  top: 0;
   justify-content: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.387);
+  position: sticky;
+  top: 0;
 }
 
 /* --------------------------------------NAVBAR CODE-------------------------------------------- */
 nav {
+  /* zindex keeps nav bar on top of .hero background image */
+  z-index: 2;
   background-color: #557669;
   position: sticky;
   top: 0;
   text-align: center;
 }
 
+.nav-header {
+  overflow: hidden;
+  position: relative;
+}
+
 nav h1 {
   color: wheat;
-  font-size: 250%;
+  font-size: 200%;
+  cursor: pointer;
+}
+
+nav h1 .icon {
+  color: wheat;
+  font-size: 80%;
+  padding-left: 5%;
+  padding-right: 0;
+  cursor: pointer;
 }
 
 nav h1 a {
   color: wheat;
   text-decoration: none;
   font-weight: normal;
-}
-
-nav ul li {
   display: inline;
   list-style: none;
+}
+
+#links {
+  /* display: inline;
+  list-style: none; 
+  add this ^^ to desktop query*/
+  /* Display none takes away links */
+  display: none;
   font-size: 125%;
   margin: 0, 20%;
+  border-top: solid #3f2218 2px;
+  border-bottom: solid #3f2218 2px;
 }
 
 nav ul li a {
   color: wheat;
   text-decoration: none;
-
+  transition: all 0.3s ease-in-out;
   padding: 0 5%;
 }
 
-nav h1 a:hover {
-  transition: all 0.3s ease-in-out;
-  color: #cd4439;
-}
-
 nav ul li a:hover {
-  transition: all 0.3s ease-in-out;
   color: #cd4439;
 }
 
@@ -137,9 +152,6 @@ textarea {
 
 /* ------------------------------------MISSION Code----------------------------------- */
 section.mission {
-  border-top: solid;
-  border-bottom: solid;
-  border-width: 4px;
   text-align: center;
   width: 100%;
   padding: 0 25px;
@@ -276,6 +288,14 @@ footer {
     margin: 0, 15%;
   }
 
+  nav h1 .icon {
+    color: wheat;
+    font-size: 80%;
+    padding-left: 5%;
+    padding-right: 0;
+    cursor: pointer;
+  }
+
   /* -----------CONTACT FORM CODE--------------- */
 
   .contact-header {
@@ -365,6 +385,17 @@ footer {
 
   nav ul li {
     font-size: 120%;
+    display: inline;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  #links {
+    display: inline;
+    border-top: none;
+    border-bottom: none;
   }
 
   /* -----------CONTACT FORM CODE--------------- */
@@ -405,7 +436,8 @@ footer {
   /* -------------NEWSLETTER CODE------------- */
 
   .newsletter-header {
-    font-size: 35px;
+    font-size: 25px;
+    margin-bottom: 2%;
   }
 
   /* -------------FOOTER QUERY CODE------------ */
