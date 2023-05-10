@@ -205,8 +205,8 @@ h3 {
 }
 
 order-button:active {
-  background-color: #7b3c3c; /* Even darker green */
-  transform: translateY(2px); /* Add a slight drop shadow effect */
+  background-color: #7b3c3c;
+  transform: translateY(2px);
 }
 
 .product:hover .description {
