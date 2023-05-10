@@ -22,14 +22,10 @@ nav {
   /* zindex keeps nav bar on top of .hero background image */
   z-index: 2;
   background-color: #557669;
+  /* Postion sticky to keep header at top of page always */
   position: sticky;
   top: 0;
   text-align: center;
-}
-
-.nav-header {
-  overflow: hidden;
-  position: relative;
 }
 
 nav h1 {
@@ -56,12 +52,11 @@ nav h1 a {
 
 #links {
   /* display: inline;
-  list-style: none; 
-  add this ^^ to desktop query
-  /* Display none takes away links 
-  display: none; */
+  /* Display none takes away links unless clicked in JS */
+  display: none;
   font-size: 125%;
   margin: 0, 20%;
+  /* Border top and bottom to make extened links pop */
   border-top: solid #3f2218 2px;
   border-bottom: solid #3f2218 2px;
 }
@@ -69,6 +64,7 @@ nav h1 a {
 nav ul li a {
   color: wheat;
   text-decoration: none;
+  /* transition time to smoothen out new color on hover transition */
   transition: all 0.3s ease-in-out;
   padding: 0 5%;
 }
@@ -85,6 +81,7 @@ nav ul li a:hover {
   opacity: 0.75;
   background-size: cover;
   background-position: center;
+  /* Could not get height to work with % */
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -103,7 +100,7 @@ nav ul li a:hover {
 
 .hero p {
   font-size: 110%;
-  margin: 90px 30px;
+  margin: 28% 10%;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.808);
 }
 
@@ -113,8 +110,9 @@ nav ul li a:hover {
   font-size: 50%;
   font-weight: bold;
   text-decoration: none;
-  padding: 5px 10px;
+  padding: 1% 3%;
   border-radius: 50px;
+  /* To transition hover */
   transition: all 0.3s ease-in-out;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.808);
 }
@@ -137,40 +135,34 @@ nav ul li a:hover {
 
 /* --------------------------------------CAROUSEL CODE-------------------------------------------- */
 
-/* Slideshow container */
 .slideshow-container {
   max-width: 50%;
   position: relative;
   margin: auto;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
 .prev,
 .next {
-  cursor: all-scroll;
+  cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
-  padding: 16px;
+  margin-top: -20%;
+  padding: 3%;
+  /* color is arrow */
   color: #f2f2f2;
+  /* background color is */
   background-color: #55766979;
   font-weight: bold;
   font-size: 100%;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 5px;
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0;
+  border-radius: 5px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -189,7 +181,7 @@ nav ul li a:hover {
   cursor: pointer;
   height: 10px;
   width: 10px;
-  margin: 0 2px;
+  margin: 1%;
   background-color: #3f221871;
   border-radius: 50%;
   display: inline-block;
@@ -226,14 +218,14 @@ nav ul li a:hover {
 
 .subsection h4 {
   position: relative;
-  font-size: 24px;
+  font-size: 150%;
   font-weight: bold;
   margin: 10% 0%;
   text-decoration: none;
 }
 
 .subsection p {
-  font-size: 16px;
+  font-size: 100%;
   line-height: 1.5;
   margin-bottom: 2%;
   padding: 0% 10%;
@@ -247,10 +239,10 @@ nav ul li a:hover {
   display: inline-block;
   background-color: #cd4439;
   color: #fff;
-  font-size: 15px;
+  font-size: 80%;
   text-decoration: none;
   margin: 5%;
-  padding: 5px 10px;
+  padding: 1% 3%;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.808);
@@ -270,6 +262,7 @@ nav ul li a:hover {
   padding: 20% 10%;
 }
 
+/* Display to none, so that in mobile it will not show */
 .pvw-title1 span {
   display: none;
 }
@@ -296,24 +289,25 @@ nav ul li a:hover {
   background-image: url("../photos/warpockets.webp");
   background-size: cover;
   background-position: center;
-  padding: 8px 0;
+  padding-bottom: 2%;
 }
 
 /* ------------------------------------Footer Code----------------------------------- */
 footer {
   background-color: #007065;
   color: rgb(243, 230, 206);
+  /* Set up grid template to place different footer info in different places */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto auto auto;
   text-align: center;
   margin-top: 0;
-  padding-top: 10px;
+  padding-top: 3%;
 }
 
 .social-icons li {
   display: inline-block;
-  padding: 5px 15px;
+  padding: 3% 5%;
   margin: 0;
 }
 
@@ -324,6 +318,7 @@ footer {
 }
 
 .socialbutton {
+  /* Tried to make % but wouldn't inline when in % */
   height: 20px;
   width: 20px;
 }
@@ -431,46 +426,47 @@ footer {
 
   /* ------------SUBSECTIONS QUERY CODE----------- */
   .pvw-title1:after {
-    font-size: 20px;
+    font-size: 130%;
     content: "Experience the effortless comfort and style of our latest collection. Each item is designed with functional pockets, so you can carry your essentials without compromising on style.";
   }
 
   .pvw-title2:after {
-    font-size: 20px;
-    padding: 0 10px;
+    font-size: 130%;
+    padding: 0 3%;
     content: "We believe that professional attire shouldn't have to compromise comfort, practicality, or style. That's why we design every article of clothing with pockets, to eliminate the frustration of having to carry a purse or sacrifice functionality. Our commitment to functionality and inclusivity is inspired by the ongoing war on pockets in women's clothing. We strive to make a difference in this industry by offering comfortable yet stylish clothing options that enable women to balance motherhood, education, the boardroom, and so much more without compromising on their personal style. Our goal is to take professional clothing from sexist to sexy, by promoting inclusivity and empowering women to feel confident and productive in any setting.";
   }
 
   .subsection h4 {
-    font-size: 50px;
+    font-size: 220%;
+    padding: 0;
   }
 
   .subsection p {
-    font-size: 20px;
-    padding: 30px 0 0;
+    font-size: 130%;
+    padding: 0;
     margin-bottom: 0;
   }
 
   .btn {
-    font-size: 15px;
-    padding: 5px 15px;
+    font-size: 100%;
+    padding: 1% 2%;
   }
 
   #section1 p {
-    padding: 5px 0;
+    padding: 0;
   }
 
   #section2 p {
-    font-size: 20px;
-    padding: 10px 60px;
+    font-size: 120%;
+    padding: 0;
   }
 
   #section3 h4 {
-    padding-top: 60px;
+    padding-top: 0;
   }
 
   #section3 {
-    padding: 15px 60px;
+    padding: 3% 10%;
   }
 
   /* -------------FOOTER QUERY CODE------------ */
@@ -481,7 +477,7 @@ footer {
 
   .social-icons li {
     margin: 0;
-    padding: 5px 46px;
+    padding: 2% 4%;
   }
 
   .footer-section h5 {
@@ -498,6 +494,7 @@ footer {
   }
 
   .footer-section li {
+    /* Could not get % to display right */
     height: 30px;
   }
 }
@@ -512,6 +509,7 @@ footer {
 
   nav ul li {
     font-size: 120%;
+    /* Display inline so in desktop the nav links will show automatically */
     display: inline;
   }
 
@@ -533,17 +531,17 @@ footer {
 
   .hero h2 {
     font-size: 350%;
-    margin-top: 65px;
+    margin-top: 7%;
   }
 
   .hero p {
     font-size: 150%;
-    margin: 20px 30px;
+    margin: 1%;
   }
 
   .hero-btn {
     font-size: 80%;
-    padding: 5px 10px;
+    padding: 0 1%;
   }
 
   /* --------------CAROUSEL QUERY CODE--------------- */
@@ -575,63 +573,48 @@ footer {
     text-align: center;
   }
 
-  .dot {
-    height: 15px;
-    width: 15px;
-    margin: 5px;
-  }
-
   /* ------------SUBSECTIONS QUERY CODE----------- */
-  .subsection {
-    padding: 0 20px;
-  }
-
   .subsection a {
     padding: 0;
   }
 
   .subsection h4 {
-    font-size: 40px;
+    font-size: 250%;
     margin: 10% 0% 0%;
   }
 
   .subsection p {
-    font-size: 16px;
+    font-size: 200%;
   }
 
   #section1 {
-    padding: 10px 300px 50px;
+    padding: 5% 20%;
   }
 
   #section1 h4 {
-    padding: 30px 10px;
-  }
-
-  .pvw-title1 span {
-    display: none;
-    padding: 0% 10%;
+    padding: 1% 1% 8%;
   }
 
   #section2 h4 {
-    margin-top: 40px;
+    margin: 5% 0 1%;
   }
 
   #section2 p {
-    font-size: 20px;
-    padding: 10px 250px;
+    font-size: 120%;
+    padding: 1% 20%;
   }
 
   .btn {
-    font-size: 15px;
+    font-size: 100%;
     margin-top: 10px;
   }
 
   #section3 p {
-    font-size: 20px;
+    font-size: 130%;
   }
 
   #section3 {
-    padding: 15px 200px;
+    padding: 1% 20%;
   }
 
   #section3 h4 {
@@ -642,7 +625,7 @@ footer {
   /* -------------FOOTER QUERY CODE------------ */
 
   .social-icons li {
-    padding: 10px 67px 0px;
+    padding: 1% 7% 0;
     margin: 0;
   }
 

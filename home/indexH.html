@@ -6,30 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styleH.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../headerFooter/style.css" />
     <title>HomePage</title>
   </head>
   <body>
+    <!-- -----------------------------------------HEADER CODE---------------------------------------------------- -->
     <header>
       <nav>
         <section class="nav-header">
           <h1>
+            <!-- Add a tag to main header tiltle for easy access to home page -->
             <a href="../home/indexH.html">Effortless Threads</a>  
+            <!-- Hamburger icon -->
             <a href="javascript:void(0);" class="icon">
-              <i class="fa fa-bars"></i>
+            <i class="fa fa-bars"></i>
             </a>
           </h1>
         </section>
+        <!-- Nav links thorugh pages -->
         <div id="links">
           <ul>
             <li><a href="../product/indexP.html">Our Shop</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="../about/indexA.html">About Us</a></li>
             <li><a href="../contact/indexCo.html">Contact Us</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Cart</a></li>
+            <li><a href="https://arcadiaquill.com/19602/features/the-history-behind-womens-pockets/">Blog</a></li>
+            <li><a href="../cart/indexCa.html">Cart</a></li>
           </ul>
         </div>
       </nav>
+      
+      <!-- -----------------------------------------HERO CODE---------------------------------------------------- -->
+      
       <div class="hero">
         <h2>Welcome to Effortless Threads</h2>
         <p>Taking professional clothing from sexist to sexy since 2021.</p>
@@ -37,9 +43,15 @@
       </div>
     </header>
     <main>
+    
+      <!-- ------------------------------------FEATURED SECTION CODE---------------------------------------------------- -->
+
       <section class="featured">
         <h4>Browse Our Featured Threads...</h4>
+        <!-- Begin slideshow code -->
+        <!-- Create a div to hold the slides -->
         <div class="slideshow-container">
+          <!-- Create a div to taget each slide itself -->
           <div class="slide">
             <img class="slide-photo" src="../photos/slied1.webp" alt="Ali's Set: Plaid blazer and slacks set." />
           </div>
@@ -51,12 +63,11 @@
           <div class="slide">
             <img class="slide-photo" src="../photos/slide3.webp" alt="Jennifer's Set: Mustard blazer and slacks set" />
           </div>
-      
+          <!-- Symbols for prev and next buttons -->
           <a class="prev">&#10094;</a>
           <a class="next">&#10095;</a>
         </div>
-        <br />
-      
+        <!-- Dot icons to click thorugh the slides -->
         <div style="text-align: center">
           <span class="dot"></span>
           <span class="dot"></span>
@@ -65,15 +76,19 @@
       </section>
         <!-- end of slideshow -->
 
+    <!-- ---------------------------------------SUBSECTIONS CODE---------------------------------------------------- -->
+        <!-- Subsection 1 -->
         <a class="page-link" href="../product/indexP.html">
+          <!-- Wrap entire section in a tag to make the entire section clickable link -->
           <section class="subsection" id="section1">
             <h4>Shop Our Latest Threads</h4>
+            <!-- pvw-title to add more text on larger views -->
             <p><div class="pvw-title1"><span></span></div>
               Shop our latest threads today and discover the perfect balance of
               style and functionality.
             </p>
-          </section></a
-        >
+          </section></a>
+        <!-- Subsection 2 -->
         <section class="subsection" id="section2">
           <h4>Join Our Community</h4>
           <p>
@@ -85,6 +100,7 @@
           </p>
           <a href="../contact/indexCo.html" class="btn">Sign up for our newsletter!</a>
         </section>
+        <!-- Subsection 1 -->
         <a class="page-link" href="../about/indexA.html">
           <section class="subsection" id="section3">
             <h4>Our Mission</h4>
@@ -97,7 +113,10 @@
         </a>
       </section>
     </main>
+
+    <!-- -----------------------------------------FOOTER CODE---------------------------------------------------- -->
     <footer>
+      <!-- Social Media links -->
       <section class="footer-section" id="footer-s1">
         <ul class="social-icons">
           <li>
@@ -141,6 +160,7 @@
           </li>
         </ul>
       </section>
+      <!-- Other company info -->
       <section class="footer-section" id="footer-s2">
         <h5>COMPANY INFO</h5>
         <ul>

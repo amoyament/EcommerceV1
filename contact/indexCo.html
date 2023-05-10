@@ -5,51 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styleCo.css" />
-    <link rel="stylesheet" type="text/css" href="../headerFooter/style.css" />
+    <!-- Links hamburger icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>ContactPage</title>
   </head>
   <body>
-      <body>
+        <!-- -----------------------------------------HEADER CODE---------------------------------------------------- -->
         <header>
           <nav>
             <section class="nav-header">
               <h1>
+                <!-- Add a tag to main header tiltle for easy access to home page -->
                 <a href="../home/indexH.html">Effortless Threads</a>  
+                <!-- Hamburger icon -->
                 <a href="javascript:void(0);" class="icon">
                   <i class="fa fa-bars"></i>
                 </a>
               </h1>
             </section>
+            <!-- Nav links through pages -->
             <div id="links">
               <ul>
-                <li><a href="#">Our Shop</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Cart</a></li>
+                <li><a href="../home/indexH.html">Our Shop</a></li>
+                <li><a href="../about/indexA.html">About Us</a></li>
+                <li><a href="../contact/indexCo.html">Contact Us</a></li>
+                <li><a href="https://arcadiaquill.com/19602/features/the-history-behind-womens-pockets/">Blog</a></li>
+                <li><a href="../cart/indexCa.html">Cart</a></li>
               </ul>
             </div>
           </nav>
         </header>
+        <!-- -----------------------------------------CONTACT FORM CODE---------------------------------------------------- -->
         <main>
           <h2 class="contact-header">Contact Us!</h2>
           <section class="contact">
+            <!-- Mail to my email -->
             <form action="mailto:amoyamen44@gmail.com" method="post">
               <label>Name</label>
               <br>
+              <!-- Make all input required for validation -->
               <input type= "text" name="name" placeholder="Your name here..." required>
-              <br>
               <br>
               <label>Phone</label>
               <br>
               <input type= "tel" name="phone" placeholder="(000) 000-0000" required>
               <br>
-              <br>
               <label>Email</label>
               <br>
               <input type="email" name="email" placeholder="youremail@gmail.com" required>
-              <br>
               <br>
               <label>Ask/Tell Us</label>
               <br>
@@ -58,12 +61,18 @@
               <input class="fbutton" type="submit" value="Submit">
             </form>
           </section>
+
+          <!-- -----------------------------------------MISSION SECTION CODE---------------------------------------------------- -->
+
           <section class="mission">
             <h2>Our Mission</h2>
             <p>
               At Effortless Threads, our mission is to empower women by providing them with comfortable, stylish and functional clothing that enhances their productivity and confidence. We believe that professional attire shouldn't have to compromise comfort, practicality, or style. That's why we design every article of clothing with pockets, to eliminate the frustration of having to carry a purse or sacrifice functionality. Our goal is to take professional clothing from sexist to sexy, by promoting inclusivity and empowering women to feel confident and productive in any setting. To keep up with the latest news of our company and earn rewards, subscribe to our Newsletter below.<div class="pvw-title2"><span></span></div>
             </p>
           </section>
+
+          <!-- -----------------------------------------NEWSLETTER CODE---------------------------------------------------- -->
+
           <h2 class="newsletter-header">Sign up for our Newsletter!</h2>
           <section class="newsletter">
             <form action="mailto:amoyamen44@gmail.com" method="post">
@@ -86,10 +95,14 @@
               <br>
               <input type= "date" name="bday" required></input>
               <br>
-              <input class="fbutton" type="submit" value="Submit">
+              <input class="fbutton" id="newsletter-button" type="submit" value="Submit">
             </form>
         </main>
+        
+        <!-- -----------------------------------------NEWSLETTER CODE---------------------------------------------------- -->
+
         <footer>
+          <!-- Social Media links -->
           <section class="footer-section" id="footer-s1">
             <ul class="social-icons">
               <li>
@@ -133,20 +146,21 @@
               </li>
             </ul>
           </section>
+          <!-- Other company info -->
           <section class="footer-section" id="footer-s2">
             <h5>COMPANY INFO</h5>
             <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Social Responsibility</a></li>
-              <li><a href="#">Student Discount</a></li>
+              <li><a href="../about/indexA.html">About Us</a></li>
+              <li><a href="../about/indexA.html">Social Responsibility</a></li>
+              <li><a href="../about/indexA.html">Student Discount</a></li>
             </ul>
           </section>
           <section class="footer-section" id="footer-s3">
             <h5>SUPPORT</h5>
             <ul>
-              <li><a href="#">Shipping</a></li>
-              <li><a href="#">Returns and Refunds</a></li>
-              <li><a href="#">Size Guide</a></li>
+              <li><a href="../contact/indexCo.html">Shipping</a></li>
+              <li><a href="../contact/indexCo.html">Returns and Refunds</a></li>
+              <li><a href="../contact/indexCo.html">Size Guide</a></li>
             </ul>
           </section>
           <section class="footer-section" id="footer-s4">

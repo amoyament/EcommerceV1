@@ -5,34 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styleP.css" />
-    <link rel="stylesheet" type="text/css" href="../headerFooter/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>ProductPage</title>
   </head>
   <body>
+    <!-- -----------------------------------------HEADER CODE---------------------------------------------------- -->
     <header>
       <nav>
         <section class="nav-header">
           <h1>
+            <!-- Add a tag to main header tiltle for easy access to home page -->
             <a href="../home/indexH.html">Effortless Threads</a>  
+            <!-- Hamburger icon -->
             <a href="javascript:void(0);" class="icon">
               <i class="fa fa-bars"></i>
             </a>
           </h1>
         </section>
+        <!-- Nav links through pages -->
         <div id="links">
           <ul>
-            <li><a href="../product/indexP.html">Our Shop</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="../home/indexH.html">Our Shop</a></li>
+            <li><a href="../about/indexA.html">About Us</a></li>
             <li><a href="../contact/indexCo.html">Contact Us</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Cart</a></li>
+            <li><a href="https://arcadiaquill.com/19602/features/the-history-behind-womens-pockets/">Blog</a></li>
+            <li><a href="../cart/indexCa.html">Cart</a></li>
           </ul>
         </div>
       </nav>
     </header>
+    <!-- -----------------------------------------STYLES SECTION CODE---------------------------------------------------- -->
     <section id="style-section">
       <h2 class="style-main-title">Shop by Style</h2>
+      <!-- Create sperarate div to hide the style breakdowns. -->
       <section id="styles-subsection">
         <div class="models-style">
           <h3 class="style-title">Ali</h3>
@@ -90,8 +95,13 @@
         </div>
       </section>
     </section>
+    <!-- -----------------------------------------PRODUCTS SECTION CODE---------------------------------------------------- -->
+    <!-- Create empty products main tag to house the poducts coming from .json file -->
     <main id="products"></main>
+    <!-- -----------------------------------------FOOTER CODE---------------------------------------------------- -->
+
     <footer>
+      <!-- Social Media links -->
       <section class="footer-section" id="footer-s1">
         <ul class="social-icons">
           <li>
@@ -135,20 +145,21 @@
           </li>
         </ul>
       </section>
+      <!-- Other company info -->
       <section class="footer-section" id="footer-s2">
         <h5>COMPANY INFO</h5>
         <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Social Responsibility</a></li>
-          <li><a href="#">Student Discount</a></li>
+          <li><a href="../about/indexA.html">About Us</a></li>
+          <li><a href="../about/indexA.html">Social Responsibility</a></li>
+          <li><a href="../about/indexA.html">Student Discount</a></li>
         </ul>
       </section>
       <section class="footer-section" id="footer-s3">
         <h5>SUPPORT</h5>
         <ul>
-          <li><a href="#">Shipping</a></li>
-          <li><a href="#">Returns and Refunds</a></li>
-          <li><a href="#">Size Guide</a></li>
+          <li><a href="../contact/indexCo.html">Shipping</a></li>
+          <li><a href="../contact/indexCo.html">Returns and Refunds</a></li>
+          <li><a href="../contact/indexCo.html">Size Guide</a></li>
         </ul>
       </section>
       <section class="footer-section" id="footer-s4">

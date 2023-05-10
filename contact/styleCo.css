@@ -1,9 +1,11 @@
+/* No automatic spacing between elements */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* Set main themes across page */
 body {
   font-family: Optima, sans-serif;
   line-height: 1.5;
@@ -16,6 +18,7 @@ body {
 header {
   justify-content: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.387);
+  /* Postion sticky to keep header at top of page always */
   position: sticky;
   top: 0;
 }
@@ -25,14 +28,8 @@ nav {
   /* zindex keeps nav bar on top of .hero background image */
   z-index: 2;
   background-color: #557669;
-  position: sticky;
   top: 0;
   text-align: center;
-}
-
-.nav-header {
-  overflow: hidden;
-  position: relative;
 }
 
 nav h1 {
@@ -59,19 +56,20 @@ nav h1 a {
 
 #links {
   /* display: inline;
-  list-style: none; 
-  add this ^^ to desktop query*/
-  /* Display none takes away links */
+  list-style: none; add this ^^ to desktop query*/
+  /* Display none takes away links for hamburger menu*/
   display: none;
   font-size: 125%;
   margin: 0, 20%;
-  border-top: solid #3f2218 2px;
-  border-bottom: solid #3f2218 2px;
+  /* Border to make links pop */
+  border-top: solid #3f2218 1px;
+  border-bottom: solid #3f2218 1px;
 }
 
 nav ul li a {
   color: wheat;
   text-decoration: none;
+  /* transition time to smoothen out new color on hover transition */
   transition: all 0.3s ease-in-out;
   padding: 0 5%;
 }
@@ -86,10 +84,10 @@ nav ul li a:hover {
   background-color: #e79e85;
   color: #3f2218;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.387);
-  font-size: 20px;
+  font-size: 150%;
   font-weight: normal;
   margin-bottom: 5%;
-  padding: 10px 0px 3px;
+  padding-top: 1%;
 }
 
 .contact {
@@ -105,31 +103,33 @@ form {
   margin: 0;
   padding: 0;
   width: 75%;
-  font-size: 12px;
+  font-size: 120%;
   border-radius: 20px;
 }
 
 label {
-  font-size: 15px;
+  font-size: 85%;
 }
+
 input {
-  padding: 6px;
-  font-size: 12px;
+  padding: 2% 3%;
+  font-size: 70%;
   border: 2px inset lightgray;
   border-radius: 15px;
   background-color: #fffff0;
-  width: 60%;
+  width: 65%;
+  /* need to update default font in input */
   font-family: Optima, sans-serif;
   text-align: center;
 }
 
 textarea {
-  padding: 6px;
-  font-size: 12px;
+  padding: 2%;
+  font-size: 70%;
   border: 2px inset lightgray;
   border-radius: 20px;
   background-color: #fffff0;
-  width: 80%;
+  width: 90%;
   font-family: Optima, sans-serif;
   text-align: center;
 }
@@ -154,7 +154,7 @@ textarea {
 section.mission {
   text-align: center;
   width: 100%;
-  padding: 0 25px;
+  padding: 0 8%;
   background-image: url("../photos/warpockets.webp");
   background-size: cover;
   background-position: center;
@@ -162,13 +162,13 @@ section.mission {
 }
 
 .mission h2 {
-  padding-top: 15px;
-  font-size: 24px;
+  padding-top: 5%;
+  font-size: 180%;
   font-weight: bold;
 }
 
 .mission p {
-  font-size: 16px;
+  font-size: 100%;
 }
 
 /* --------------------------------------NEWSLETTER CODE-------------------------------------------- */
@@ -177,10 +177,10 @@ section.mission {
   background-color: #e79e85;
   color: #3f2218;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.387);
-  font-size: 20px;
+  font-size: 150%;
   font-weight: normal;
   margin-bottom: 5%;
-  padding: 10px 0px 3px;
+  padding: 2% 0;
 }
 
 .newsletter {
@@ -190,25 +190,22 @@ section.mission {
   align-items: center;
 }
 
-input {
-  color: gray;
-}
-
 /* ------------------------------------Footer Code----------------------------------- */
 footer {
   background-color: #007065;
   color: rgb(243, 230, 206);
+  /* Set up grid template to place different footer info in different places */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto auto auto;
   text-align: center;
   margin-top: 0;
-  padding-top: 10px;
+  padding-top: 3%;
 }
 
 .social-icons li {
   display: inline-block;
-  padding: 5px 15px;
+  padding: 3% 5%;
   margin: 0;
 }
 
@@ -219,6 +216,7 @@ footer {
 }
 
 .socialbutton {
+  /* Tried to make % but wouldn't inline when in % */
   height: 20px;
   width: 20px;
 }
@@ -299,24 +297,25 @@ footer {
   /* -----------CONTACT FORM CODE--------------- */
 
   .contact-header {
-    font-size: 25px;
+    font-size: 180%;
     margin-bottom: 2%;
   }
 
   /* Layout Set Up of Form CSS Code. */
 
   label {
-    font-size: 18px;
+    font-size: 80%;
   }
+
   input {
-    padding: 6px 3px;
-    font-size: 15px;
+    padding: 1%;
+    font-size: 70%;
     width: 40%;
   }
 
   textarea {
-    padding: 6px 3px;
-    font-size: 15px;
+    padding: 1%;
+    font-size: 70%;
     width: 50%;
     font-family: Optima, sans-serif;
     text-align: center;
@@ -324,25 +323,24 @@ footer {
 
   .fbutton {
     width: 15%;
-    font-size: 15px;
+    font-size: 70%;
   }
 
   /* ---------------MISSION Code--------------- */
   .mission h2 {
-    padding-top: 15px;
-    font-size: 26px;
-    font-weight: bold;
+    padding-top: 1%;
+    font-size: 180%;
   }
 
   .mission p {
-    font-size: 18px;
-    padding: 0 50px 10px;
+    font-size: 100%;
+    padding: 0 8% 1%;
   }
 
   /* -------------NEWSLETTER CODE------------- */
 
   .newsletter-header {
-    font-size: 25px;
+    font-size: 180%;
     margin-bottom: 2%;
   }
 
@@ -354,7 +352,7 @@ footer {
 
   .social-icons li {
     margin: 0;
-    padding: 5px 46px;
+    padding: 2% 4%;
   }
 
   .footer-section h5 {
@@ -371,6 +369,7 @@ footer {
   }
 
   .footer-section li {
+    /* Could not get % to display right */
     height: 30px;
   }
 }
@@ -401,49 +400,52 @@ footer {
   /* -----------CONTACT FORM CODE--------------- */
 
   .contact-header {
-    font-size: 35px;
+    font-size: 180%;
   }
-
-  /* Layout Set Up of Form CSS Code. */
 
   label {
-    font-size: 25px;
+    font-size: 100%;
   }
+
   input {
-    font-size: 20px;
+    padding: 1%;
+    font-size: 80%;
+    width: 30%;
+    margin-bottom: 2%;
   }
 
   textarea {
-    font-size: 25px;
-    width: 55%;
+    padding: 1%;
+    font-size: 80%;
+    width: 40%;
   }
 
   .fbutton {
-    width: 15%;
-    font-size: 15px;
+    width: 10%;
+    font-size: 80%;
   }
 
   /* ---------------MISSION Code--------------- */
   .mission h2 {
-    font-size: 35px;
+    font-size: 200%;
   }
 
   .mission p {
-    font-size: 25px;
-    padding: 0 100px 20px;
+    font-size: 150%;
+    padding: 0 10% 2%;
   }
 
   /* -------------NEWSLETTER CODE------------- */
 
   .newsletter-header {
-    font-size: 25px;
-    margin-bottom: 2%;
+    font-size: 180%;
+    margin-bottom: 1%;
   }
 
   /* -------------FOOTER QUERY CODE------------ */
 
   .social-icons li {
-    padding: 10px 67px 0px;
+    padding: 1% 7% 0;
     margin: 0;
   }
 

@@ -84,7 +84,7 @@ nav ul li a:hover {
 
 #style-section {
   background-color: #e79e85;
-  padding: 15px 0px 3px;
+  padding: 4% 0 0.2%;
   color: #3f2218;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.387);
 }
@@ -120,24 +120,7 @@ h3 {
 
 /* --------------------------------------Product CODE-------------------------------------------- */
 
-.product {
-  background-color: #ecbc55a1;
-  border: 1px solid black;
-  padding: 10px;
-  margin-bottom: 30px;
-  margin-left: 15px;
-  margin-right: 15px;
-  display: inline-grid;
-  grid-template-columns: 3;
-  width: 250px;
-}
-
-.product img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-*/ #products {
+#products {
   padding-top: 20px;
 }
 
@@ -334,8 +317,8 @@ footer {
   /* ---------STYLE SECTION QUERY CODE---------- */
 
   h2.style-main-title {
-    margin-bottom: 2%;
-    font-size: 30px;
+    margin-bottom: 15px;
+    font-size: 40px;
   }
 
   h2.style-main-title:hover {
@@ -407,12 +390,11 @@ footer {
     border-top: none;
     border-bottom: none;
   }
-  */
 
   /* ---------STYLE SECTION QUERY CODE---------- */
   #styles-subsection p {
     font-size: 15px;
-    padding: 0px 250px 10px;
+    padding: 0 250px 10px;
   }
   /* -------------FOOTER QUERY CODE------------ */
 
