@@ -1,18 +1,18 @@
-//Hamburger Menu JS
-const hamburger = document.getElementsByClassName("icon")[0];
-const links = document.getElementById("links");
+// //Hamburger Menu JS
+// const hamburger = document.getElementsByClassName("icon")[0];
+// const links = document.getElementById("links");
+
+// // hamburger.addEventListener("click", () => {
+// //   links.style.display = "block";
+// // });
 
 // hamburger.addEventListener("click", () => {
-//   links.style.display = "block";
+//   if (links.style.display === "block") {
+//     links.style.display = "none";
+//   } else {
+//     links.style.display = "block";
+//   }
 // });
-
-hamburger.addEventListener("click", () => {
-  if (links.style.display === "block") {
-    links.style.display = "none";
-  } else {
-    links.style.display = "block";
-  }
-});
 
 //Style section drop down
 const stylesSubsection = document.getElementById("styles-subsection");

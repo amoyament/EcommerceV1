@@ -57,9 +57,9 @@ nav h1 a {
 #links {
   /* display: inline;
   list-style: none; 
-  add this ^^ to desktop query*/
-  /* Display none takes away links */
-  display: none;
+  add this ^^ to desktop query
+  /* Display none takes away links 
+  display: none; */
   font-size: 125%;
   margin: 0, 20%;
   border-top: solid #3f2218 2px;
@@ -79,6 +79,7 @@ nav ul li a:hover {
 
 /* --------------------------------------HERO CODE-------------------------------------------- */
 .hero {
+  z-index: 0;
   color: rgb(245, 222, 179);
   background-image: url("../photos/heroimage.jpeg");
   opacity: 0.75;
