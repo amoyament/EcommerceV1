@@ -73,7 +73,7 @@ fetch("products.json")
 
       const button = document.createElement("a");
       button.classList.add("order-button");
-      button.setAttribute("href", "../cart/indexCa.html");
+      button.setAttribute("href", "indexCa.html");
       button.textContent = "Add to Order";
       div.appendChild(button);
 
