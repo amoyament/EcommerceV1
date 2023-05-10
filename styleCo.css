@@ -155,7 +155,7 @@ section.mission {
   text-align: center;
   width: 100%;
   padding: 0 8%;
-  background-image: url("../photos/warpockets.webp");
+  background-image: url("./photos/warpockets.webp");
   background-size: cover;
   background-position: center;
   color: rgb(243, 230, 206);

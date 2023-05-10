@@ -77,7 +77,7 @@ nav ul li a:hover {
 .hero {
   z-index: 0;
   color: rgb(245, 222, 179);
-  background-image: url("../photos/heroimage.jpeg");
+  background-image: url("./photos/heroimage.jpeg");
   opacity: 0.75;
   background-size: cover;
   background-position: center;
@@ -256,7 +256,7 @@ nav ul li a:hover {
 
 #section1 {
   color: rgb(243, 230, 206);
-  background-image: url("../photos/shophome.webp");
+  background-image: url("./photos/shophome.webp");
   background-size: cover;
   background-position: center;
   padding: 20% 10%;
@@ -286,7 +286,7 @@ nav ul li a:hover {
 #section3 {
   color: rgb(243, 230, 206);
   align-items: center;
-  background-image: url("../photos/warpockets.webp");
+  background-image: url("./photos/warpockets.webp");
   background-size: cover;
   background-position: center;
   padding-bottom: 2%;
