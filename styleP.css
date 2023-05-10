@@ -1,0 +1,414 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Optima, sans-serif;
+  line-height: 1.5;
+  background-color: #eaceb4;
+  width: 100vw;
+  text-align: center;
+}
+
+/* --------------------------------------HEADER CODE-------------------------------------------- */
+header {
+  /* Zindex for menu page so photos dont roll over */
+  z-index: 5;
+  position: sticky;
+  top: 0;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.387);
+}
+
+/* --------------------------------------NAVBAR CODE-------------------------------------------- */
+nav {
+  background-color: #557669;
+  position: sticky;
+  top: 0;
+  text-align: center;
+}
+
+.nav-header {
+  overflow: hidden;
+  position: relative;
+}
+
+nav h1 {
+  color: wheat;
+  font-size: 200%;
+  cursor: pointer;
+}
+
+nav h1 .icon {
+  color: wheat;
+  font-size: 80%;
+  padding-left: 5%;
+  padding-right: 0;
+  cursor: pointer;
+}
+
+nav h1 a {
+  color: wheat;
+  text-decoration: none;
+  font-weight: normal;
+  display: inline;
+  list-style: none;
+}
+
+#links {
+  /* display: inline;
+  list-style: none; 
+  add this ^^ to desktop query*/
+  /* Display none takes away links */
+  display: none;
+  font-size: 125%;
+  margin: 0, 20%;
+  border-top: solid #3f2218 2px;
+  border-bottom: solid #3f2218 2px;
+}
+
+nav ul li a {
+  color: wheat;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  padding: 0 5%;
+}
+
+nav ul li a:hover {
+  color: #cd4439;
+}
+
+/* ------------------------------------Styles Section Code----------------------------------- */
+
+#style-section {
+  background-color: #e79e85;
+  padding: 4% 0 0.2%;
+  color: #3f2218;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.387);
+}
+
+h2 {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 5%;
+  line-height: 0.8;
+  cursor: pointer;
+}
+
+h2.style-main-title:hover {
+  transition: all 0.3s ease-in-out;
+  color: #cd4439;
+}
+
+h3 {
+  font-size: 15px;
+  text-align: center;
+}
+
+#styles-subsection p {
+  font-size: 10px;
+  padding: 0px 10px 10px;
+}
+
+#styles-subsection {
+  padding: 0px 8px;
+  display: none;
+  text-align: left;
+}
+
+/* --------------------------------------Product CODE-------------------------------------------- */
+
+#products {
+  padding-top: 20px;
+}
+
+.product {
+  background-color: #ecbc55a1;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  width: 250px;
+  position: relative;
+  display: inline-grid;
+}
+
+.price {
+  font-size: 18px;
+  padding: 5px;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: filter 0.3s ease;
+}
+
+.product:hover img {
+  filter: brightness(0.3);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 81%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.product:hover .overlay {
+  opacity: 1;
+}
+
+.description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(243, 230, 206);
+  font-size: 1em;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.order-button {
+  background-color: #e79e85;
+  border: none;
+  color: black;
+  padding: 5px 0px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0px 50px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.order-button:hover {
+  background-color: rgb(243, 230, 206);
+  color: #cd4439;
+  border: 2px solid #cd4439;
+}
+
+order-button:active {
+  background-color: #7b3c3c; /* Even darker green */
+  transform: translateY(2px); /* Add a slight drop shadow effect */
+}
+
+.product:hover .description {
+  opacity: 1;
+}
+
+/* ------------------------------------Footer Code----------------------------------- */
+footer {
+  background-color: #007065;
+  color: rgb(243, 230, 206);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto auto;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 10px;
+}
+
+.social-icons li {
+  display: inline-block;
+  padding: 5px 15px;
+  margin: 0;
+}
+
+.social-icons ul {
+  text-align: center;
+  bottom: 0;
+  left: 0;
+}
+
+.socialbutton {
+  height: 20px;
+  width: 20px;
+}
+
+.footer-section h5 {
+  font-weight: normal;
+  font-size: 80%;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: rgb(243, 230, 206);
+  font-size: 25%;
+}
+
+.footer-section ul {
+  font-size: 60%;
+  list-style: none;
+}
+
+#footer-s1 {
+  grid-row: 2;
+  grid-column: 1 / span 2;
+}
+
+#footer-s2 {
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: center;
+}
+
+#footer-s3 {
+  grid-row: 1;
+  grid-column: 2;
+  justify-self: center;
+}
+
+#footer-s4 {
+  font-size: 10%;
+  grid-row: 3;
+  grid-column: 1 / span 2;
+}
+
+/* Colorpallette
+#eaceb4
+#e79e85
+#cd4439
+#9d2503
+#7b3c3c
+#ecbc55
+#557669
+#669b7c
+#007065
+*/
+
+/* Small devices (landscape tablets) */
+@media (min-width: 768px) {
+  /* ------------NAVBAR QUERY CODE-------------- */
+
+  nav h1 {
+    font-size: 300%;
+  }
+
+  nav ul li {
+    font-size: 125%;
+    margin: 0, 15%;
+  }
+
+  nav h1 .icon {
+    color: wheat;
+    font-size: 80%;
+    padding-left: 5%;
+    padding-right: 0;
+    cursor: pointer;
+  }
+
+  /* ---------STYLE SECTION QUERY CODE---------- */
+
+  h2.style-main-title {
+    margin-bottom: 15px;
+    font-size: 40px;
+  }
+
+  h2.style-main-title:hover {
+    color: #cd4439;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  #styles-subsection p {
+    font-size: 15px;
+    padding: 0px 15px 10px;
+  }
+
+  #styles-subsection {
+    padding: 0px 40px;
+    text-align: center;
+  }
+
+  /* -------------FOOTER QUERY CODE------------ */
+  .socialbutton {
+    height: 30px;
+    width: 30px;
+  }
+
+  .social-icons li {
+    margin: 0;
+    padding: 5px 46px;
+  }
+
+  .footer-section h5 {
+    font-size: 120%;
+    padding-bottom: 0;
+  }
+
+  .footer-section ul {
+    font-size: 150%;
+  }
+
+  .footer-section a {
+    font-size: 50%;
+  }
+
+  .footer-section li {
+    height: 30px;
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 1020px) {
+  /* ------------NAVBAR QUERY CODE-------------- */
+  nav h1 {
+    font-size: 300%;
+    line-height: 1.1;
+  }
+
+  nav ul li {
+    font-size: 120%;
+    display: inline;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  #links {
+    display: inline;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  /* ---------STYLE SECTION QUERY CODE---------- */
+  #styles-subsection p {
+    font-size: 15px;
+    padding: 0 250px 10px;
+  }
+  /* -------------FOOTER QUERY CODE------------ */
+
+  .social-icons li {
+    padding: 10px 67px 0px;
+    margin: 0;
+  }
+
+  .footer-section h5 {
+    font-size: 120%;
+    padding-bottom: 0;
+  }
+
+  .footer-section a {
+    font-size: 60%;
+  }
+}

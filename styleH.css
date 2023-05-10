@@ -1,0 +1,640 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Optima, sans-serif;
+  line-height: 1.5;
+  background-color: wheat;
+  width: 100vw;
+}
+
+/* --------------------------------------HEADER CODE-------------------------------------------- */
+header {
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.387);
+}
+
+/* --------------------------------------NAVBAR CODE-------------------------------------------- */
+nav {
+  /* zindex keeps nav bar on top of .hero background image */
+  z-index: 2;
+  background-color: #557669;
+  /* Postion sticky to keep header at top of page always */
+  position: sticky;
+  top: 0;
+  text-align: center;
+}
+
+nav h1 {
+  color: wheat;
+  font-size: 200%;
+  cursor: pointer;
+}
+
+nav h1 .icon {
+  color: wheat;
+  font-size: 80%;
+  padding-left: 5%;
+  padding-right: 0;
+  cursor: pointer;
+}
+
+nav h1 a {
+  color: wheat;
+  text-decoration: none;
+  font-weight: normal;
+  display: inline;
+  list-style: none;
+}
+
+#links {
+  /* display: inline;
+  /* Display none takes away links unless clicked in JS */
+  display: none;
+  font-size: 125%;
+  margin: 0, 20%;
+  /* Border top and bottom to make extened links pop */
+  border-top: solid #3f2218 2px;
+  border-bottom: solid #3f2218 2px;
+}
+
+nav ul li a {
+  color: wheat;
+  text-decoration: none;
+  /* transition time to smoothen out new color on hover transition */
+  transition: all 0.3s ease-in-out;
+  padding: 0 5%;
+}
+
+nav ul li a:hover {
+  color: #cd4439;
+}
+
+/* --------------------------------------HERO CODE-------------------------------------------- */
+.hero {
+  z-index: 0;
+  color: rgb(245, 222, 179);
+  background-image: url("../photos/heroimage.jpeg");
+  opacity: 0.75;
+  background-size: cover;
+  background-position: center;
+  /* Could not get height to work with % */
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero h2 {
+  margin-top: 0;
+  text-shadow: 10px;
+  font-size: 250%;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.808);
+}
+
+.hero p {
+  font-size: 110%;
+  margin: 28% 10%;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.808);
+}
+
+.hero-btn {
+  background-color: #cd4439;
+  color: #f2f2f2;
+  font-size: 50%;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1% 3%;
+  border-radius: 50px;
+  /* To transition hover */
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.808);
+}
+
+.hero-btn:hover {
+  background-color: #f2f2f2;
+  color: #cd4439;
+  border: 2px solid #cd4439;
+}
+
+/* --------------------------------------MAIN/SUBSECTIONS CODE-------------------------------------------- */
+
+.featured h4 {
+  color: #3f2218;
+  text-align: center;
+  font-size: 120%;
+  font-weight: bold;
+  margin: 8% 0 4%;
+}
+
+/* --------------------------------------CAROUSEL CODE-------------------------------------------- */
+
+.slideshow-container {
+  max-width: 50%;
+  position: relative;
+  margin: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -20%;
+  padding: 3%;
+  /* color is arrow */
+  color: #f2f2f2;
+  /* background color is */
+  background-color: #55766979;
+  font-weight: bold;
+  font-size: 100%;
+  transition: 0.6s ease;
+  border-radius: 5px;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 5px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #557669;
+}
+
+.slide-photo {
+  height: 10%;
+  width: 100%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 1%;
+  background-color: #3f221871;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #3f2218;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* --------------------------------------SUBSECTIONS CODE-------------------------------------------- */
+.subsection {
+  text-align: center;
+  width: 100%;
+  padding: 0;
+}
+
+.subsection h4 {
+  position: relative;
+  font-size: 150%;
+  font-weight: bold;
+  margin: 10% 0%;
+  text-decoration: none;
+}
+
+.subsection p {
+  font-size: 100%;
+  line-height: 1.5;
+  margin-bottom: 2%;
+  padding: 0% 10%;
+}
+
+.page-link {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #cd4439;
+  color: #fff;
+  font-size: 80%;
+  text-decoration: none;
+  margin: 5%;
+  padding: 1% 3%;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.808);
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #cd4439;
+  border: 2px solid #cd4439;
+}
+
+#section1 {
+  color: rgb(243, 230, 206);
+  background-image: url("../photos/shophome.webp");
+  background-size: cover;
+  background-position: center;
+  padding: 20% 10%;
+}
+
+/* Display to none, so that in mobile it will not show */
+.pvw-title1 span {
+  display: none;
+}
+
+.pvw-title2 span {
+  display: none;
+}
+
+#section1 h4 {
+  color: rgb(243, 230, 206);
+}
+
+#section2 {
+  color: #3f2218;
+}
+
+#section3 h4 {
+  color: rgb(243, 230, 206);
+}
+
+#section3 {
+  color: rgb(243, 230, 206);
+  align-items: center;
+  background-image: url("../photos/warpockets.webp");
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 2%;
+}
+
+/* ------------------------------------Footer Code----------------------------------- */
+footer {
+  background-color: #007065;
+  color: rgb(243, 230, 206);
+  /* Set up grid template to place different footer info in different places */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto auto;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 3%;
+}
+
+.social-icons li {
+  display: inline-block;
+  padding: 3% 5%;
+  margin: 0;
+}
+
+.social-icons ul {
+  text-align: center;
+  bottom: 0;
+  left: 0;
+}
+
+.socialbutton {
+  /* Tried to make % but wouldn't inline when in % */
+  height: 20px;
+  width: 20px;
+}
+
+.footer-section h5 {
+  font-weight: normal;
+  font-size: 80%;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: rgb(243, 230, 206);
+  font-size: 25%;
+}
+
+.footer-section ul {
+  font-size: 60%;
+  list-style: none;
+}
+
+#footer-s1 {
+  grid-row: 2;
+  grid-column: 1 / span 2;
+}
+
+#footer-s2 {
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: center;
+}
+
+#footer-s3 {
+  grid-row: 1;
+  grid-column: 2;
+  justify-self: center;
+}
+
+#footer-s4 {
+  font-size: 10%;
+  grid-row: 3;
+  grid-column: 1 / span 2;
+}
+
+/* Colorpallette
+#eaceb4
+#e79e85
+#cd4439
+#9d2503
+#7b3c3c
+#ecbc55
+#557669
+#669b7c
+#007065
+*/
+
+/* Small devices (landscape tablets) */
+@media (min-width: 768px) {
+  /* ------------NAVBAR QUERY CODE-------------- */
+
+  nav h1 {
+    font-size: 300%;
+  }
+
+  nav ul li {
+    font-size: 125%;
+    margin: 0, 15%;
+  }
+
+  nav h1 .icon {
+    color: wheat;
+    font-size: 80%;
+    padding-left: 5%;
+    padding-right: 0;
+    cursor: pointer;
+  }
+
+  /* ---------------HERO QUERY CODE--------------- */
+  .hero {
+    height: 515px;
+  }
+
+  .hero h2 {
+    font-size: 300%;
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.808);
+  }
+
+  .hero p {
+    font-size: 180%;
+    margin: 16% 0% 20%;
+  }
+
+  .hero-btn {
+    font-size: 80%;
+    font-weight: normal;
+  }
+
+  /* ---------------MAIN QUERY CODE--------------- */
+
+  .featured h4 {
+    font-size: 180%;
+    font-weight: bold;
+    text-align: center;
+    margin: 1% 0;
+  }
+
+  /* ------------SUBSECTIONS QUERY CODE----------- */
+  .pvw-title1:after {
+    font-size: 130%;
+    content: "Experience the effortless comfort and style of our latest collection. Each item is designed with functional pockets, so you can carry your essentials without compromising on style.";
+  }
+
+  .pvw-title2:after {
+    font-size: 130%;
+    padding: 0 3%;
+    content: "We believe that professional attire shouldn't have to compromise comfort, practicality, or style. That's why we design every article of clothing with pockets, to eliminate the frustration of having to carry a purse or sacrifice functionality. Our commitment to functionality and inclusivity is inspired by the ongoing war on pockets in women's clothing. We strive to make a difference in this industry by offering comfortable yet stylish clothing options that enable women to balance motherhood, education, the boardroom, and so much more without compromising on their personal style. Our goal is to take professional clothing from sexist to sexy, by promoting inclusivity and empowering women to feel confident and productive in any setting.";
+  }
+
+  .subsection h4 {
+    font-size: 220%;
+    padding: 0;
+  }
+
+  .subsection p {
+    font-size: 130%;
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  .btn {
+    font-size: 100%;
+    padding: 1% 2%;
+  }
+
+  #section1 p {
+    padding: 0;
+  }
+
+  #section2 p {
+    font-size: 120%;
+    padding: 0;
+  }
+
+  #section3 h4 {
+    padding-top: 0;
+  }
+
+  #section3 {
+    padding: 3% 10%;
+  }
+
+  /* -------------FOOTER QUERY CODE------------ */
+  .socialbutton {
+    height: 30px;
+    width: 30px;
+  }
+
+  .social-icons li {
+    margin: 0;
+    padding: 2% 4%;
+  }
+
+  .footer-section h5 {
+    font-size: 120%;
+    padding-bottom: 0;
+  }
+
+  .footer-section ul {
+    font-size: 150%;
+  }
+
+  .footer-section a {
+    font-size: 50%;
+  }
+
+  .footer-section li {
+    /* Could not get % to display right */
+    height: 30px;
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 1020px) {
+  /* ------------NAVBAR QUERY CODE-------------- */
+  nav h1 {
+    font-size: 300%;
+    line-height: 1.1;
+  }
+
+  nav ul li {
+    font-size: 120%;
+    /* Display inline so in desktop the nav links will show automatically */
+    display: inline;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  #links {
+    display: inline;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  /* ---------------HERO QUERY CODE--------------- */
+
+  .hero {
+    height: 90vh;
+  }
+
+  .hero h2 {
+    font-size: 350%;
+    margin-top: 7%;
+  }
+
+  .hero p {
+    font-size: 150%;
+    margin: 1%;
+  }
+
+  .hero-btn {
+    font-size: 80%;
+    padding: 0 1%;
+  }
+
+  /* --------------CAROUSEL QUERY CODE--------------- */
+
+  .featured h4 {
+    font-size: 200%;
+    margin: 1% 0%;
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 50%;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Hide the images by default */
+  .slide {
+    display: none;
+    text-align: center;
+  }
+
+  .slide-photo {
+    height: 5%;
+    width: 50%;
+  }
+
+  .slide-photo img {
+    text-align: center;
+  }
+
+  /* ------------SUBSECTIONS QUERY CODE----------- */
+  .subsection a {
+    padding: 0;
+  }
+
+  .subsection h4 {
+    font-size: 250%;
+    margin: 10% 0% 0%;
+  }
+
+  .subsection p {
+    font-size: 200%;
+  }
+
+  #section1 {
+    padding: 5% 20%;
+  }
+
+  #section1 h4 {
+    padding: 1% 1% 8%;
+  }
+
+  #section2 h4 {
+    margin: 5% 0 1%;
+  }
+
+  #section2 p {
+    font-size: 120%;
+    padding: 1% 20%;
+  }
+
+  .btn {
+    font-size: 100%;
+    margin-top: 10px;
+  }
+
+  #section3 p {
+    font-size: 130%;
+  }
+
+  #section3 {
+    padding: 1% 20%;
+  }
+
+  #section3 h4 {
+    padding-top: 20px;
+    margin-top: 0;
+  }
+
+  /* -------------FOOTER QUERY CODE------------ */
+
+  .social-icons li {
+    padding: 1% 7% 0;
+    margin: 0;
+  }
+
+  .footer-section h5 {
+    font-size: 120%;
+    padding-bottom: 0;
+  }
+
+  .footer-section a {
+    font-size: 60%;
+  }
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Ali's Set",
+    "price": "$120.00",
+    "description": "Elevate your work wardrobe with this black and brown plaid pant suit made with soft, breathable fabric and functional pockets that offers a tailored fit, combining comfort and sophistication",
+    "image": "../photos/aliset.webp"
+  },
+  {
+    "name": "Amanda's Set",
+    "price": "$135.00",
+    "description": "Upgrade your work wardrobe with thhis blue pant suit crafted with soft, breathable fabric and featuring functional pockets that offers a tailored fit, combining comfort and style effortlessly.",
+    "image": "../photos/amandaset.webp"
+  },
+  {
+    "name": "Mirabel's Jumpsuit",
+    "price": "$95.00",
+    "description": "Inspire confidence with this burnt orange jumpsuit made with soft, breathable fabric and functional pockets that offers a relaxed fit and adds a touch of vibrancy to any outfit.",
+    "image": "../photos/mirabelset.webp"
+  },
+  {
+    "name": "Daisy's Blazer",
+    "price": "$75.00",
+    "description": "Add a touch of sophistication with this soft and simple pink blazer made with comfortable fabric and functional pockets that offers a tailored fit and adds a pop of color to any wardrobe, making it a versatile piece that can be dressed up or down.",
+    "image": "../photos/daisyblazer.webp"
+  },
+  {
+    "name": "Jennifer's Blazer",
+    "price": "$80.00",
+    "description": "Make a statement with this timeless brown and cream herringbone blazer crafted from high-quality fabric with functional pockets that offers a tailored fit and adds a touch of refinement to any wardrobe.",
+    "image": "../photos/jenniferblazer.webp"
+  },
+  {
+    "name": "Mirabel's Button Up",
+    "price": "$35.00",
+    "description": "Stay comfortable and stylish with this short sleeve green top designed with a front breast pocket and made with lightweight and breathable fabric, perfect for any occasion and versatile.",
+    "image": "../photos/mirabelshirt.webp"
+  },
+  {
+    "name": "Amanda's Top",
+    "price": "$40.00",
+    "description": "Transform your casual wardrobe with this fashionable and versatile shirt that combines classic stripes with a modern twist, made with a soft and thick fabric, deep v-neck, and collar, perfect for cooler weather and can be layered.",
+    "image": "../photos/amandashirt.webp"
+  },
+  {
+    "name": "Daisy's Skirt",
+    "price": "$60.00",
+    "description": "Stay chic and comfortable with this cream-colored skirt made with a thick and high-quality fabric, perfect for any occasion, from work to weekends, with a T-length design and convenient pockets, both stylish and practical.",
+    "image": "../photos/daisyskirt.webp"
+  },
+  {
+    "name": "Jennifer's Skirt",
+    "price": "$75.00",
+    "description": "Add a touch of sophistication to your wardrobe with this  stylish and practical dark green skirt that will elevate any outfit, with a T-length design, gold buttons, and convenient pockets, made with a high-quality fabric, comfortable and durable.",
+    "image": "../photos/jenniferskirt.webp"
+  },
+  {
+    "name": "Amanda's Pant",
+    "price": "$65.00",
+    "description": "Stay comfortable and chic with this modern take on a classic wardrobe staple, made with a soft and breathable fabric, wide leg design, and convenient pockets, perfect for long days at the office or running errands around town.",
+    "image": "../photos/amandapant.webp"
+  },
+  {
+    "name": "Ali's Pant",
+    "price": "$70.00",
+    "description": "Elevate your everyday wardrobe by wearing this loose-fitting pant with a black, red, and cream plaid design. It is made of a lightweight fabric and features a front pocket. It can be dressed up or down for any occasion.",
+    "image": "../photos/alipant.webp"
+  },
+  {
+    "name": "Daiy's Pant",
+    "price": "$60.00",
+    "description": "Add a touch of feminity to your wardrobe with this dusty rose-colored slack that offers a loose fit and snap close buttons. It also has a tie-front ribbon to add a touch of femininity. It is versatile and perfect for any occasion",
+    "image": "../photos/daisypant.webp"
+  }
+]
