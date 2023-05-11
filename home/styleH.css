@@ -18,8 +18,9 @@ header {
 }
 
 /* --------------------------------------NAVBAR CODE-------------------------------------------- */
-/* Postion sticky to keep header at top of page always */
-/* zindex keeps nav bar on top of .hero background image */
+
+/* Postion sticky to keep header at top of page always
+zindex keeps nav bar on top of .hero background image */
 
 nav {
   z-index: 2;
@@ -75,6 +76,7 @@ nav ul li a:hover {
 }
 
 /* --------------------------------------HERO CODE-------------------------------------------- */
+
 /* Could not get height to work with % */
 .hero {
   z-index: 0;
@@ -142,8 +144,8 @@ nav ul li a:hover {
   margin: auto;
 }
 
-/* color is arrow */
-/* background color is */
+/* color is arrow
+background color is */
 .prev,
 .next {
   cursor: pointer;
@@ -153,7 +155,6 @@ nav ul li a:hover {
   margin-top: -20%;
   padding: 3%;
   color: #f2f2f2;
-
   background-color: #55766979;
   font-weight: bold;
   font-size: 100%;
@@ -295,6 +296,7 @@ nav ul li a:hover {
 }
 
 /* ------------------------------------Footer Code----------------------------------- */
+
 /* Set up grid template to place different footer info in different places */
 footer {
   background-color: #007065;

@@ -58,9 +58,9 @@ nav h1 a {
 }
 
 /* display: inline;
-  list-style: none; 
-  add this ^^ to desktop query*/
-/* Display none takes away links */
+  list-style: none;
+  add this ^^ to desktop query
+  Display none takes away links */
 #links {
   display: none;
   font-size: 125%;
