@@ -15,6 +15,7 @@ body {
 }
 
 /* --------------------------------------HEADER CODE-------------------------------------------- */
+
 /* Postion sticky to keep header at top of page always */
 header {
   justify-content: center;
